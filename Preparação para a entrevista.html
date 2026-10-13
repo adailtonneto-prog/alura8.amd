@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Preparação para a entrevista</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F6F3FF; --ink:#1B1340; --muted:#5B5478; --card:#FFFFFF;
+  --accent:#6C3CF0; --pop:#FF5C8A; --line:#1B1340;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#140F2E;--ink:#F1EDFF;--muted:#B5ACDA;--card:#1E1745;--accent:#A98BFF;--pop:#FF7FA3;--line:#F1EDFF}
+}
+:root[data-theme="dark"]{--bg:#140F2E;--ink:#F1EDFF;--muted:#B5ACDA;--card:#1E1745;--accent:#A98BFF;--pop:#FF7FA3;--line:#F1EDFF}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;font-size:17px}
+main{max-width:760px;margin:0 auto;padding:56px 22px 72px}
+h1{font-family:"Bricolage Grotesque","Trebuchet MS",sans-serif;font-weight:800;font-size:clamp(38px,8.5vw,64px);line-height:1.05;margin:0 0 14px;letter-spacing:-.02em}
+h1 span{display:block;color:var(--accent)}
+.lead{color:var(--muted);margin:0 0 36px;max-width:60ch}
+.list{display:grid;gap:20px}
+.box{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:6px 6px 0 var(--accent)}
+h2{font-family:"Bricolage Grotesque","Trebuchet MS",sans-serif;font-weight:600;font-size:21px;line-height:1.25;margin:0 0 10px}
+.box p{margin:0}
+.q{font-style:italic;padding:8px 14px;border-left:5px solid var(--pop);margin:8px 0 0;background:color-mix(in srgb,var(--pop) 12%,transparent);border-radius:0 8px 8px 0}
+.box.alt{box-shadow:6px 6px 0 var(--pop)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Preparação<span>para a entrevista</span></h1>
+  <p class="lead">Minhas respostas para me organizar antes do dia da entrevista de estágio.</p>
+
+  <div class="list">
+    <section class="box">
+      <h2>O que vou revisar antes da entrevista?</h2>
+      <p>Meu <strong>currículo</strong>, os <strong>projetos do portfólio</strong> e as <strong>informações sobre a empresa</strong>.</p>
+    </section>
+
+    <section class="box alt">
+      <h2>Que roupa vou usar?</h2>
+      <p><strong>Calça escura de sarja</strong> e <strong>camisa de botão clara</strong>.</p>
+    </section>
+
+    <section class="box">
+      <h2>Que perguntas quero treinar para responder?</h2>
+      <p class="q">"Pode me contar sobre você?"</p>
+      <p class="q">"Como resolveu seu maior desafio profissional?"</p>
+    </section>
+
+    <section class="box alt">
+      <h2>Que pergunta vou fazer ao entrevistador?</h2>
+      <p class="q">"Quais são os principais desafios da vaga nos primeiros 90 dias?"</p>
+    </section>
+  </div>
+</main>
+</body>
+</html>
